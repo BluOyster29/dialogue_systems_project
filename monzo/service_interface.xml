@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+    <entity_recognizer name="MonzoRecognizer">
+        <target>
+            <device_module device="MonzoDevice"/>
+        </target>
+    </entity_recognizer>
+</service_interface>
