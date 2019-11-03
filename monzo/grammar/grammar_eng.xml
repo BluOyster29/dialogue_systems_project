@@ -23,7 +23,7 @@
   <question speaker="user" predicate="account_details" type="wh_question">
     <one-of>
       <item>I want to check my account details</item>
-      <item>I want the details of my  <slot predicate="select_account"/> account details</item>
+      <item>I want the details of my  <slot predicate="select_account"/> account</item>
     </one-of>
   </question>
 
