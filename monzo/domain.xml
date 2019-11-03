@@ -9,7 +9,8 @@
 
 <goal type="resolve" question_type="wh_question" predicate="account_details">
   <plan>
-    <dev_query predicate="account_details" type="wh_question"/>
+    <findout type="wh_question" predicate="select_account"/>
+    <dev_query predicate="select_account" type="wh_question"/>
   </plan>
 </goal>
 </domain>

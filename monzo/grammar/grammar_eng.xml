@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
-  <!-- TOP -->
-  <action name="top">
-    <one-of>
-      <item>main menu</item>
-      <item>top</item>
-      <item>beginning</item>
-      <item>cancel</item>
-      <item>forget it</item>
-      <item>never mind</item>
-      <item>abort</item>
-    </one-of>
-  </action>
-
-  <action name="up">
-    <one-of>
-      <item>up</item>
-      <item>back</item>
-      <item>go back</item>
-    </one-of>
-  </action>
 
   <!-- Check Account Balance -->
   <question speaker="user" predicate="account_details" type="wh_question">
@@ -35,6 +15,9 @@
     Which account
   </question>
 
+  <individual name="current">
+    <item>current</item>
+  </individual>
   <!-- Accounts -->
 
 
