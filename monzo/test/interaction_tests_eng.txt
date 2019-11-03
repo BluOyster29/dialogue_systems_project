@@ -10,5 +10,5 @@ S> Your account details are as follows.
 
 --- check account (one_shot)
 S> What would you like to do?
-U> I want the details of my savings account
+U> I want the details of my saving account
 S> Your details are as follows .
