@@ -1,6 +1,11 @@
 from tdm.lib.device import DddDevice, DeviceWHQuery
-from funkshons import clean_account_details
 
+def clean_account_details(response):
+    owner = "Account owner is {}.".format(response['accounts'][0]['owners'][0]['preferred_name'])
+    account_number = "Account number is {}.".format(response['accounts'][0]['account_number'])
+    sort_code = "Sort code is {}.".format(response['accounts'][0]['sort_code'])
+    currency  = "Currency is in {}.".format(response['accounts'][0]['currency'])
+    return [owner, account_number, sort_code, currency]
 
 class MonzoDevice(DddDevice):
 
