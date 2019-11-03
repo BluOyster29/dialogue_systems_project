@@ -23,15 +23,23 @@
 
   <question speaker="user" predicate="account_details" type="wh_question">
     <one-of>
-      <item>I want to check my account details</item>
-      <item>What are my account details</item>
+      <item>I want to know my account details</item>
+      <item>What is my  <slot predicate="select_account"/> account details</item>
     </one-of>
   </question>
 
+  <question speaker="all" predicate="account_details" type="wh_question">account details</question>
+
   <question speaker="system" predicate="select_account" type="wh_question">
-    which account
+    Which account
   </question>
 
-  <individual name="current_account">current</individual>
+  <answer speaker="system" predicate="account_details">Your account details are <slot predicate="account_details"/></answer>
+
+  <individual name="current_account">
+    <one-of>
+      <item>current</item>
+    </one-of>
+  </individual>
 
 </grammar>
