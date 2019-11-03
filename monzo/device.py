@@ -27,5 +27,3 @@ API_ENDPOINTS = {BALANCE     : "https://api.monzo.com/balance",
                  #Shows the user their transactions
                  POTS        : "https://api.monzo.com/pots"}
                  #Shows users pot
-
-    ACCOUNT_NAME = {"current" = CURRENT}
