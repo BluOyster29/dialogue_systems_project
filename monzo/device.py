@@ -2,12 +2,12 @@ from tdm.lib.device import DddDevice, DeviceWHQuery
 import requests
 
 def clean_account_details(response):
-    owner = "Account owner is {}.".format(response['accounts'][0]['owners'][0]['preferred_name'])
-    account_number = "Account number is {}.".format(response['accounts'][0]['account_number'])
-    sort_code = "Sort code is {}.".format(response['accounts'][0]['sort_code'])
-    currency  = "Currency is in {}.".format(response['accounts'][0]['currency'])
-    return [owner, account_number, sort_code, currency]
-
+    #owner = "Account owner is {}.".format(response['accounts'][0]['owners'][0]['preferred_name'])
+    #account_number = "Account number is {}.".format(response['accounts'][0]['account_number'])
+    #sort_code = "Sort code is {}.".format(response['accounts'][0]['sort_code'])
+    #currency  = "Currency is in {}.".format(response['accounts'][0]['currency'])
+    #return [owner, account_number, sort_code, currency]
+    return response
 class MonzoDevice(DddDevice):
 
     class account_details(DeviceWHQuery):
