@@ -6,4 +6,11 @@
       <findout type="goal"/>
     </plan>
   </goal>
+
+<goal type="resolve" predicate="account_details">
+  <plan>
+    <findout type="wh_question" predicate="select_account"/>
+    <dev_query predicate="select_account" type="wh_question"/>
+  </plan>
+</goal>
 </domain>

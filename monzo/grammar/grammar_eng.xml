@@ -1,3 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
+  <!-- TOP -->
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <!-- Check Account Balance -->
+  <question speaker="user" predicate="account_details" type="wh_question">
+    <one-of>
+      <item>I want to check my account details</item>
+      <item>What are my account details</item>
+      <item>I want to check an account</item>
+      <item>I wnat the details of my <slot predicate="select_account"/> account</item>
+    </one-of>
+
+  <question speaker="system" predicate="select_account" type="wh_question">
+    Which account
+  </question>
+
+  <!-- Accounts -->
+  <individual name="current">
+    <item>current</item>
+  </individual>
+
 </grammar>
