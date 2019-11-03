@@ -6,6 +6,4 @@
 
   <sort name="account_name"/>
 
-  <individual name="current_account" sort="account_name"/>
-
 </ontology>
