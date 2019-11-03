@@ -36,6 +36,18 @@
 
   <answer speaker="system" predicate="account_details">Your account details are <slot predicate="account_details"/></answer>
 
-  <individual name="current">current</individual>
+  <individual name="current">
+    <one-of>
+      <item>current</item>
+      <item>Main</item>
+      <item>checking</item>
+    </one-of>
+  </individual>
+
+  <individual name="saving">
+    <one-of>
+      <item>savings</item>
+    </one-of>
+  </individual>
 
 </grammar>
