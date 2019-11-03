@@ -1,2 +1,14 @@
 --- main menu
 S> What would you like to do?
+
+--- check account (incremental)
+S> What would you like to do?
+U> I want to check my account account
+S> Which account?
+U> Current
+S> Your account details are as follows.
+
+--- check account (one_shot)
+S> What would you like to do?
+U> I want the details of my Current account
+S> Your details are as follows .
