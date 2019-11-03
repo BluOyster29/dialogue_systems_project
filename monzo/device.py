@@ -1,5 +1,6 @@
 from tdm.lib.device import DddDevice, DeviceWHQuery
 import requests
+
 def clean_account_details(response):
     owner = "Account owner is {}.".format(response['accounts'][0]['owners'][0]['preferred_name'])
     account_number = "Account number is {}.".format(response['accounts'][0]['account_number'])
@@ -14,7 +15,7 @@ class MonzoDevice(DddDevice):
         def perform(self, select_account):
             endpoint = self.device.API_ENDPOINTS.get('balance')
             header = self.device.HEADERS
-            response = clean_account_details(requests.get(endpoint, headers=headers).json())
+            response = clean_account_details(requests.get(endpoint, headers=header).json())
             print(response)
             return response
 
@@ -22,7 +23,7 @@ class MonzoDevice(DddDevice):
         def perform(self, select_account):
             endpoint = self.device.API_ENDPOINTS.get('accounts')
             header = self.device.HEADERS
-            response = clean_account_details(requests.get(endpoint, headers=headers).json())
+            response = clean_account_details(requests.get(endpoint, headers=header).json())
             print(response)
             return response
 
