@@ -38,7 +38,7 @@
 
   <individual name="current_account">
     <one-of>
-      <item>current</item>
+      <item>current_account</item>
     </one-of>
   </individual>
 
