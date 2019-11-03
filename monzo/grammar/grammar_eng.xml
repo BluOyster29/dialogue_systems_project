@@ -32,10 +32,5 @@
     which account
   </question>
 
-
-  <individual name="current_account">
-    <one-of>
-      <item>current</item>
-    </one-of>
-  </individual>
+  <individual name="current_account">current</individual>
 </grammar>
