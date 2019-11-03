@@ -26,10 +26,6 @@
     <utterance>I want to see my account details</utterance>
   </question>
 
-  <question speaker="system" predicate="select_account" type="wh_question">
-    <utterance>Which account</utterance>
-  </question>
-
   <!-- Accounts -->
 
 
