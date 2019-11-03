@@ -29,6 +29,7 @@
       <item>I want to check an account</item>
       <item>I wnat the details of my <slot predicate="select_account"/> account</item>
     </one-of>
+  </question>
 
   <question speaker="system" predicate="select_account" type="wh_question">
     Which account
