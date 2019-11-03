@@ -27,7 +27,7 @@
   </question>
 
   <question speaker="system" predicate="select_account" type="wh_question">
-    Which account
+    <utterance>Which account</utterance>
   </question>
 
   <!-- Accounts -->
