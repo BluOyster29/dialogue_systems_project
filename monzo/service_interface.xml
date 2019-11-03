@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <service_interface>
 
-  <query name="account_details">
+  <query name="view_account_details">
     <parameters>
       <parameter predicate="select_account" format="grammar_entry"/>
     </parameters>

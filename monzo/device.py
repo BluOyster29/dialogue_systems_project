@@ -9,7 +9,7 @@ def clean_account_details(response):
 
 class MonzoDevice(DddDevice):
 
-    class account_details(DeviceWHQuery):
+    class view_account_details(DeviceWHQuery):
         '''This function checks the users balance and requires'''
         def perform(self):
             endpoint = self.device.API_ENDPOINTS.get(ACCOUNTS)
