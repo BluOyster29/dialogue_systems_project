@@ -1,0 +1,6 @@
+--- main menu
+S> What would you like to do?
+
+--- Temperature of a place (incremental)
+U> I want to check my bank account details
+S> Your details are

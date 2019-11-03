@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+    <query name="account_details">
+      <parameters>
+        <parameter predicate="select_account" format="grammar_entry"/>
+      </parameters>
+      <target>
+        <device_module device="WeatherDevice"/>
+      </target>
+    </query>
+
+
+
+</service_interface>

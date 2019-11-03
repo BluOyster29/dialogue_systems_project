@@ -1,0 +1,1027 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "beside"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "between"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "beyond"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "within"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "but"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "by"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "come"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "down"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "during"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "except"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "for"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "from"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "in"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "inside"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "into"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "less"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "help"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "like"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "near"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "of"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 33, 
+            "value": "London", 
+            "entity": "predicate:select_city"
+          }
+        ], 
+        "intent": "weather:question::temperature", 
+        "text": "what is the temperature of London"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "your"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "on"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "onto"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "opposite"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "out"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why's the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "outside"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "over"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "past"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "save"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "short"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "since"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "than"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "then"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 34, 
+            "value": "Cardiff", 
+            "entity": "predicate:select_city"
+          }, 
+          {
+            "start": 38, 
+            "end": 45, 
+            "value": "England", 
+            "entity": "predicate:select_country"
+          }
+        ], 
+        "intent": "weather:question::temperature", 
+        "text": "what is the temperature of Cardiff in England number"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "throughout"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "to"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 33, 
+            "value": "London", 
+            "entity": "predicate:select_city"
+          }, 
+          {
+            "start": 37, 
+            "end": 42, 
+            "value": "Wales", 
+            "entity": "predicate:select_country"
+          }
+        ], 
+        "intent": "weather:question::temperature", 
+        "text": "what is the temperature of London in Wales number"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "under"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "underneath"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 33, 
+            "value": "London", 
+            "entity": "predicate:select_city"
+          }, 
+          {
+            "start": 37, 
+            "end": 44, 
+            "value": "England", 
+            "entity": "predicate:select_country"
+          }
+        ], 
+        "intent": "weather:question::temperature", 
+        "text": "what is the temperature of London in England number"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "until"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 5, 
+            "value": "Wales", 
+            "entity": "sort:country_name"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "Wales"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "upon"
+      }, 
+      {
+        "entities": [], 
+        "intent": "weather:question::temperature", 
+        "text": "I want to know the temperature of a place"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "with"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "England", 
+            "entity": "sort:country_name"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "England"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "without"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "worth"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "it"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 34, 
+            "value": "Cardiff", 
+            "entity": "predicate:select_city"
+          }, 
+          {
+            "start": 38, 
+            "end": 43, 
+            "value": "Wales", 
+            "entity": "predicate:select_country"
+          }
+        ], 
+        "intent": "weather:question::temperature", 
+        "text": "what is the temperature of Cardiff in Wales number"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "Cardiff", 
+            "entity": "sort:city_name"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "Cardiff"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "a"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "am"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "are"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "London", 
+            "entity": "sort:city_name"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "London"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "this"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "stop"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "that"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "I"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how's the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "you"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "single", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "single"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "them"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "she"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "they"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "wait"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 11, 
+            "value": "double word", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "double word"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "tell"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "his"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "her"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 12, 
+            "value": "three in one", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "three in one"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "determine"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "mine"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "through"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "their"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 16, 
+            "value": "hey make it four", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "hey make it four"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "us"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "our"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "show"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 25, 
+            "value": "the more the merrier five", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "the more the merrier five"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how is"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 26, 
+            "value": "calm down and count to six", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "calm down and count to six"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "how is the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "ok"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 37, 
+            "value": "bring them through to the jolly seven", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "bring them through to the jolly seven"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when is the"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 40, 
+            "value": "noone counts toes like an eight toed guy", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "noone counts toes like an eight toed guy"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 9, 
+            "value": "Wales", 
+            "entity": "sort:country_name"
+          }
+        ], 
+        "intent": "weather:answer_negation", 
+        "text": "not Wales"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what is"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 39, 
+            "value": "it matters to make sense for nine of us", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "it matters to make sense for nine of us"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what's the"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "toward"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what is the"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 46, 
+            "value": "would you bring ten or none to a desert island", 
+            "entity": "string"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "would you bring ten or none to a desert island"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why is"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "he"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why is the"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 8, 
+            "value": "imperial", 
+            "entity": "sort:temperature_units"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "imperial"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "shoot"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "do"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "make"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "when's the"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 6, 
+            "value": "metric", 
+            "entity": "sort:temperature_units"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "metric"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "start"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "celcius", 
+            "entity": "sort:temperature_units"
+          }
+        ], 
+        "intent": "weather:answer", 
+        "text": "celcius"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "enable"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "disable"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "raise"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 34, 
+            "value": "Cardiff", 
+            "entity": "predicate:select_city"
+          }
+        ], 
+        "intent": "weather:question::temperature", 
+        "text": "what is the temperature of Cardiff"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "lower"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 11, 
+            "value": "England", 
+            "entity": "sort:country_name"
+          }
+        ], 
+        "intent": "weather:answer_negation", 
+        "text": "not England"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "increase"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "act"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "unlike"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "decrease"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "above"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 11, 
+            "value": "Cardiff", 
+            "entity": "sort:city_name"
+          }
+        ], 
+        "intent": "weather:answer_negation", 
+        "text": "not Cardiff"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "them"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 10, 
+            "value": "London", 
+            "entity": "sort:city_name"
+          }
+        ], 
+        "intent": "weather:answer_negation", 
+        "text": "not London"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "go"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "say"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "aboard"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 12, 
+            "value": "imperial", 
+            "entity": "sort:temperature_units"
+          }
+        ], 
+        "intent": "weather:answer_negation", 
+        "text": "not imperial"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "what's"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "about"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 10, 
+            "value": "metric", 
+            "entity": "sort:temperature_units"
+          }
+        ], 
+        "intent": "weather:answer_negation", 
+        "text": "not metric"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "up"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 11, 
+            "value": "celcius", 
+            "entity": "sort:temperature_units"
+          }
+        ], 
+        "intent": "weather:answer_negation", 
+        "text": "not celcius"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "across"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "off"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "after"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "against"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "along"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "among"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "hang on"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "ask"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "as"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "at"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "on"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "atop"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "my"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "before"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "behind"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "below"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "beneath"
+      }, 
+      {
+        "entities": [], 
+        "intent": "NEGATIVE", 
+        "text": "why"
+      }
+    ], 
+    "entity_synonyms": [], 
+    "regex_features": []
+  }
+}

@@ -1,0 +1,62 @@
+2019-10-15 11:59:07,545 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'temperature_units', grammar_entry='imperial', name=u'units_imperial')
+2019-10-15 11:59:07,546 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'units_imperial'
+2019-10-15 11:59:07,547 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'city_name', grammar_entry='Cardiff', name=u'city_cardiff')
+2019-10-15 11:59:07,547 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'city_cardiff'
+2019-10-15 11:59:07,547 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'city_name', grammar_entry='London', name=u'city_london')
+2019-10-15 11:59:07,547 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'city_london'
+2019-10-15 11:59:07,547 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'country_name', grammar_entry='Wales', name=u'country_wales')
+2019-10-15 11:59:07,547 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'country_wales'
+2019-10-15 11:59:07,548 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'temperature_units', grammar_entry='metric', name=u'units_metric')
+2019-10-15 11:59:07,548 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'units_metric'
+2019-10-15 11:59:07,548 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'temperature_units', grammar_entry='celcius', name=u'units_metric')
+2019-10-15 11:59:07,548 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'units_metric'
+2019-10-15 11:59:07,548 - interactiontest - DEBUG - EntityDb(weather): add_entity(sort=u'country_name', grammar_entry='England', name=u'country_england')
+2019-10-15 11:59:07,548 - interactiontest - DEBUG - EntityDb(weather): add_entity returns u'country_england'
+2019-10-15 11:59:07,548 - interactiontest - DEBUG - Backend()
+2019-10-15 11:59:07,740 - interactiontest - ERROR - Encountered an error, sending event 'BACKEND_ERROR'
+Traceback (most recent call last):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 100, in handle_event_from_external_queue
+    self._handle_external_event(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 113, in _handle_external_event
+    resulting_events = self._send_event_through_components(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/backend.py", line 124, in _send_event_through_components
+    moves = self._dm.act(events)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 47, in act
+    self._act_on_queued_events()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 86, in _act_on_queued_events
+    self._handle_event(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 101, in _handle_event
+    self.forward_event_internally_and_externally(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/component.py", line 104, in forward_event_internally_and_externally
+    self._event_dispatcher.dispatch(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/event_dispatcher.py", line 27, in dispatch
+    self._send_event_to_subscribing_modules(event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/event_dispatcher.py", line 49, in _send_event_to_subscribing_modules
+    handler, event.get_type(), event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/event_dispatcher.py", line 55, in _send_to_subscribing_module
+    module.process_event(protected_event)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/lib/module.py", line 50, in process_event
+    handler()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 56, in _handle_interpretation
+    self._set_input_event_and_run_update_and_select()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 61, in _set_input_event_and_run_update_and_select
+    self.run_update_and_set_ddd_when_needed()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 66, in run_update_and_set_ddd_when_needed
+    self.run_update()
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/dme_module.py", line 131, in run_update
+    self.update_module.run(self._tis)
+  File "tdm/dm/update.py", line 167, in tdm.dm.update.UpdateModule.run
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_module.py", line 128, in repeatGroupSequence
+    if self._apply(ruleGroup, identifier, tis):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_module.py", line 139, in _apply
+    if self.applyRule(rule, tis):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_module.py", line 100, in applyRule
+    if rule.testPreconditions(self._ddd_manager, tis):
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/isu_rule.py", line 18, in testPreconditions
+    return self.preconditions(ddd_manager, self.tis)
+  File "tdm/dm/update.py", line 1916, in tdm.dm.update.exec_findoutFromDevice.preconditions
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/dm/tis.py", line 1346, in get_resolving_results_from_devices
+    all_results = device_handler.query_all(question, self.shared.com, self.language_code)
+  File "/usr/local/tdm/lib/python2.7/site-packages/tdm/ddd/device_handler.py", line 249, in query_all
+    result_descriptions = apply(query.perform, arguments)
+AttributeError: 'temperature' object has no attribute 'perform'
