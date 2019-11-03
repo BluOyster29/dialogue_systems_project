@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <domain name="MonzoDomain" is_super_domain="true">
-  <goal type="perform" action="top">
-    <plan>
-      <forget_all/>
-      <findout type="goal"/>
-    </plan>
-  </goal>
-
 <goal type="resolve" question_type="wh_question" predicate="account_details">
   <plan>
-    <findout type="wh_question" predicate="select_account"/>
     <dev_query predicate="select_account" type="wh_question"/>
   </plan>
 </goal>
