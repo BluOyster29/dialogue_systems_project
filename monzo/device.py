@@ -31,7 +31,7 @@ class MonzoDevice(DddDevice):
     BALANCE = "balance"
     TRANSACTIONS = "transactions"
     POTS = "pots"
-    ACCOUNTS = "https://api.monzo.com/balance"
+    ACCOUNTS = "accounts"
 
     HEADERS = {"Authorization" : "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlYiI6IlFXUi93TER6QlVYZGs2Vk5iNTZ3IiwianRpIjoiYWNjdG9rXzAwMDA5b2E3bU81bFlla0wyTldlM3QiLCJ0eXAiOiJhdCIsInYiOiI2In0.nd2c5dnhCOrWgPMOycHsWMaIaHnpq6DUpmvo9QJ6fCTjPjrytKT8v09PripFNZFtBXTwHlRTxcdRUZ3Do-sgeA"}
     ACCOUNT_ID = "user_00009Z2sSGIUDzcXctzkcD"
