@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <service_interface>
+
   <query name="account_details">
-    <parameters/>
+    <parameters predicate="account_details" format="grammar_entry"/>
     <target>
       <device_module device="MonzoDevice"/>
     </target>
   </query>
+
 </service_interface>

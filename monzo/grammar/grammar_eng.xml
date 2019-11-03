@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
 
-  <question speaker="user" predicate="account_details" type="wh_question">I want to check my account details</question>
+  <action name="top">
+     <one-of>
+       <item>main menu</item>
+       <item>top</item>
+       <item>beginning</item>
+       <item>cancel</item>
+       <item>forget it</item>
+       <item>never mind</item>
+       <item>abort</item>
+     </one-of>
+   </action>
+
+   <action name="up">
+     <one-of>
+       <item>up</item>
+       <item>back</item>
+       <item>go back</item>
+     </one-of>
+   </action>
+   
+  <question speaker="user" predicate="account_details" type="wh_question">
+    <one-of>
+      <item>I want to check my account details</item>
+      <item>What are my account details</item>
+    </one-of>
+  </question>
 
   <question speaker="system" predicate="account_details" type="wh_question">
     Your account details are as following <sort predicate="account_details"/>
   </question>
-
 </grammar>
