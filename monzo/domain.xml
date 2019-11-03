@@ -2,7 +2,7 @@
 <domain name="MonzoDomain" is_super_domain="true">
 <goal type="resolve" question_type="wh_question" predicate="account_details">
   <plan>
-    <dev_query predicate="select_account" type="wh_question"/>
+    <dev_query predicate="account_details" type="wh_question"/>
   </plan>
 </goal>
 </domain>
