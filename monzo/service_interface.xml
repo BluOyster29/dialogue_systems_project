@@ -5,10 +5,17 @@
         <parameter predicate="select_account" format="grammar_entry"/>
       </parameters>
       <target>
-        <device_module device="MonzoDevice"/>
+        <device_module device="account_details"/>
       </target>
     </query>
 
-
+    <query name="balance">
+      <parameters>
+        <parameter predicate="select_account" format="grammar_entry"/>
+      </parameters>
+      <target>
+        <device_module device="balance"/>
+      </target>
+    </query>
 
 </service_interface>

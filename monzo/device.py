@@ -24,7 +24,6 @@ class MonzoDevice(DddDevice):
             response = clean_account_details(requests.get(endpoint, headers=headers).json())
             return response
 
-
 CURRENT = "user_00009Z2sSGIUDzcXctzkcD"
 BALANCE = "balance"
 TRANSACTIONS = "transactions"
