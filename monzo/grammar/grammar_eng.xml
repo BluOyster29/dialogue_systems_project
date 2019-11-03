@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
-
   <action name="top">
      <one-of>
        <item>main menu</item>
@@ -28,6 +27,13 @@
     </one-of>
   </question>
 
+  <question speaker="user" predicate="balance" type="wh_question">
+    <one-of>
+      <item>I want to check my account balance</item>
+      <item>I want the details of my  <slot predicate="select_account"/> account balance</item>
+    </one-of>
+  </question>
+
   <question speaker="all" predicate="account_details" type="wh_question">account details</question>
 
   <question speaker="system" predicate="select_account" type="wh_question">
@@ -36,7 +42,7 @@
 
   <answer speaker="system" predicate="account_details">Your account details are <slot predicate="account_details"/></answer>
 
- <!--
+
   <individual name="current">
     <one-of>
       <item>current</item>
@@ -44,12 +50,13 @@
       <item>checking</item>
     </one-of>
   </individual>
--->
 
   <individual name="saving">
     <one-of>
-      <item>savings</item>
+      <item>saving</item>
     </one-of>
   </individual>
+
+
 
 </grammar>

@@ -13,5 +13,12 @@
       <dev_query predicate="account_details" type="wh_question"/>
     </plan>
   </goal>
-  
+
+  <goal type="resolve" question_type="wh_question" predicate="balance">
+    <plan>
+      <findout type="wh_question" predicate="select_account"/>
+      <dev_query predicate="balance" type="wh_question"/>
+    </plan>
+  </goal>
+
 </domain>
