@@ -12,16 +12,18 @@ class MonzoDevice(DddDevice):
     class account_details(DeviceWHQuery):
         '''This function checks the users balance and requires'''
         def perform(self, select_account):
-            endpoint = self.device.API_ENDPOINTS.get(BALANCE)
+            endpoint = self.device.API_ENDPOINTS.get('balance')
             header = self.device.HEADERS
             response = clean_account_details(requests.get(endpoint, headers=headers).json())
+            print(response)
             return response
 
     class balance(DeviceWHQuery):
         def perform(self, select_account):
-            endpoint = self.device.API_ENDPOINTS.get(ACCOUNTS)
+            endpoint = self.device.API_ENDPOINTS.get('accounts')
             header = self.device.HEADERS
             response = clean_account_details(requests.get(endpoint, headers=headers).json())
+            print(response)
             return response
 
     CURRENT = "user_00009Z2sSGIUDzcXctzkcD"
@@ -34,11 +36,11 @@ class MonzoDevice(DddDevice):
     ACCOUNT_ID = "user_00009Z2sSGIUDzcXctzkcD"
     POT_ID = "pot_00009cj4TafFU2lqI95qR0"
 
-    API_ENDPOINTS = {BALANCE     : "https://api.monzo.com/balance",
+    API_ENDPOINTS = {BALANCE : "https://api.monzo.com/balance",
                  #Shows the user their acount balance
-                 ACCOUNTS    : "https://api.monzo.com/accounts",
+                 ACCOUNTS : "https://api.monzo.com/accounts",
                  #Shows the user account information
                  TRANSACTIONS : "https://api.monzo.com/transactions",
                  #Shows the user their transactions
-                 POTS        : "https://api.monzo.com/pots"}
+                 POTS : "https://api.monzo.com/pots"}
                  #Shows users pot
