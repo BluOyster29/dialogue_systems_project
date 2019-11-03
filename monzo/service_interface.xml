@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <service_interface>
   <query name="account_details">
-    <parameters>
-      <parameter predicate="select_account" format="value"/>
-    </parameters>
     <target>
       <device_module device="MonzoDevice"/>
     </target>
