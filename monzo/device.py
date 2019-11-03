@@ -11,7 +11,7 @@ class MonzoDevice(DddDevice):
 
     class view_account_details(DeviceWHQuery):
         '''This function checks the users balance and requires'''
-        def perform(self):
+        def perform(self, select_account):
             endpoint = self.device.API_ENDPOINTS.get(ACCOUNTS)
             header = self.device.HEADERS
             response = clean_account_details(requests.get(endpoint, headers=headers).json())
