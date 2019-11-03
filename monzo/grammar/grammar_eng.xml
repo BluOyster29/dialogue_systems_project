@@ -36,7 +36,7 @@
 
   <answer speaker="system" predicate="account_details">Your account details are <slot predicate="account_details"/></answer>
 
-  <individual name="current_account">
+  <individual name="current">
     <one-of>
       <item>current</item>
     </one-of>
