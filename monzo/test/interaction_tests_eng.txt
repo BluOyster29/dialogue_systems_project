@@ -3,12 +3,12 @@ S> What would you like to do?
 
 --- check account (incremental)
 S> What would you like to do?
-U> I want to check my account account
+U> I want to check my account details
 S> Which account?
-U> Current
+U> current
 S> Your account details are as follows.
 
 --- check account (one_shot)
 S> What would you like to do?
-U> I want the details of my Current account
+U> I want the details of my current account
 S> Your details are as follows .
