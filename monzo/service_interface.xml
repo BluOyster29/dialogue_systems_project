@@ -5,7 +5,7 @@
         <parameter predicate="select_account" format="grammar_entry"/>
       </parameters>
       <target>
-        <device_module device="WeatherDevice"/>
+        <device_module device="MonzoDevice"/>
       </target>
     </query>
 
