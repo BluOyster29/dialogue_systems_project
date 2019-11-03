@@ -20,7 +20,7 @@
        <item>go back</item>
      </one-of>
    </action>
-   
+
   <question speaker="user" predicate="account_details" type="wh_question">
     <one-of>
       <item>I want to check my account details</item>
@@ -28,7 +28,14 @@
     </one-of>
   </question>
 
-  <question speaker="system" predicate="account_details" type="wh_question">
-    Your account details are as following <sort predicate="account_details"/>
+  <question speaker="system" predicate="select_account" type="wh_question">
+    which account
   </question>
+
+
+  <individual name="current_account">
+    <one-of>
+      <item>current</item>
+    </one-of>
+  </individual>
 </grammar>

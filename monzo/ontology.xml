@@ -2,5 +2,8 @@
 <ontology name="MonzoOntology">
 
   <predicate name="account_details" sort="string"/>
+  <predicate name="select_account" sort="account_name"/>
 
+  <individual name="current_account" sort="account_name">
+    
 </ontology>

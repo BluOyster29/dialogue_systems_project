@@ -2,7 +2,9 @@
 <service_interface>
 
   <query name="account_details">
-    <parameters predicate="account_details" format="grammar_entry"/>
+    <parameters>
+      <parameter predicate="select_account" format="grammar_entry"/>
+    </parameters>
     <target>
       <device_module device="MonzoDevice"/>
     </target>
