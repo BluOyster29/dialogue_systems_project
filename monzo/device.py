@@ -1,34 +1,31 @@
-from tdm.lib.device import DddDevice, EntityRecognizer
+from tdm.lib.device import DddDevice, DeviceWHQuery
+from funkshons import clean_account_details
 
 
 class MonzoDevice(DddDevice):
-    class MonzoRecognizer(EntityRecognizer):
-        """Entity recognizer for Monzo"""
 
-        def recognize(self, utterance, language):
-            """Recognize entities in a user utterance, given the specified language.
+    class account_details(DeviceWHQuery):
+        '''This function checks the users balance and requires'''
+        def perform(self, select_account):
+            endpoint = self.device.API_ENDPOINTS.get(ACCOUNTS)
+            header = self.device.HEADERS
+            response = clean_account_details(requests.get(endpoint, headers=headers).json())
+            return response
 
-            This method is responsible for finding all dynamic entities in the utterance. Its accuracy affects the
-            behaviour of the dialogue system.
+CURRENT = "user_00009Z2sSGIUDzcXctzkcD"
+BALANCE = "balance"
+TRANSACTIONS = "transactions"
+POTS = "pots"
+HEADERS = {"Authorization" : "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJlYiI6IlFXUi93TER6QlVYZGs2Vk5iNTZ3IiwianRpIjoiYWNjdG9rXzAwMDA5b2E3bU81bFlla0wyTldlM3QiLCJ0eXAiOiJhdCIsInYiOiI2In0.nd2c5dnhCOrWgPMOycHsWMaIaHnpq6DUpmvo9QJ6fCTjPjrytKT8v09PripFNZFtBXTwHlRTxcdRUZ3Do-sgeA"}
+ACCOUNT_ID = "user_00009Z2sSGIUDzcXctzkcD"
+POT_ID = "pot_00009cj4TafFU2lqI95qR0"
+API_ENDPOINTS = {BALANCE     : "https://api.monzo.com/balance",
+                 #Shows the user their acount balance
+                 ACCOUNTS    : "https://api.monzo.com/accounts",
+                 #Shows the user account information
+                 TRANSACTIONS : "https://api.monzo.com/transactions",
+                 #Shows the user their transactions
+                 POTS        : "https://api.monzo.com/pots"}
+                 #Shows users pot
 
-            Since the search is conducted during runtime, particular care should be taken to ensure that the method is
-            accurate, robust and has sufficient performance.
-
-            Args:
-                utterance (str): The utterance to be searched. For example 'call John'.
-                language  (str): The language code of the utterance according to the ISO 639-2/B standard.
-                                 Exceptions are Swedish ('sv' instead of 'swe') and Italian ('it' instead of 'ita').
-
-            Returns:
-                list of dicts: Given the example utterance "call John", the following entity could be returned
-                [
-                    {
-                        "sort": "contact",       # The sort must be declared in the ontology.
-                        "grammar_entry": "John", # The grammar entry as it occurred in 'utterance'.
-                        "name": "contact_john",  # [optional] Should be a globally unique identifier. Must never be
-                                                 # found as is in a user utterance. Use for example the form Sort_ID
-                                                 # (e.g. contact_john).
-                    },
-                ]
-            """
-            return []
+    ACCOUNT_NAME = {"current" = CURRENT}
