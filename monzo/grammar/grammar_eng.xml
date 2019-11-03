@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
 
-  <!-- Check Account Balance -->
   <question speaker="user" predicate="account_details" type="wh_question">
     <one-of>
       <item>I want to check my account details</item>
       <item>What are my account details</item>
-      <item>I want to check an account</item>
-      <item>I want the details of my account</item>
     </one-of>
   </question>
 
-  <question speaker="system" predicate="select_account" type="wh_question">
-    Which account
+  <question speaker="system" predicate="account_details" type="wh_question">
+    Your account details are as following <sort predicate="account_details"/>
   </question>
 
   <individual name="current">
     <item>current</item>
   </individual>
-  <!-- Accounts -->
 
 
 </grammar>
