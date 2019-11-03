@@ -23,7 +23,7 @@
 
   <!-- Check Account Balance -->
   <question speaker="user" predicate="account_details" type="wh_question">
-    <utterance>I want to see my account details</utterance>
+    <item>I want to see my account details</item>
   </question>
 
   <!-- Accounts -->
