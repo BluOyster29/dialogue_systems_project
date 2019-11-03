@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
 
-  <question speaker="user" predicate="account_details" type="wh_question">
-    I want to check my account details
-  </question>
+  <question speaker="user" predicate="account_details" type="wh_question">I want to check my account details</question>
 
   <question speaker="system" predicate="account_details" type="wh_question">
     Your account details are as following <sort predicate="account_details"/>
