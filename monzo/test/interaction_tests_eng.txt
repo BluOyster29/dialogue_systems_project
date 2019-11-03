@@ -5,10 +5,10 @@ S> What would you like to do?
 S> What would you like to do?
 U> I want to check my account details
 S> Which account?
-U> current
+U> savings
 S> Your account details are as follows.
 
 --- check account (one_shot)
 S> What would you like to do?
-U> I want the details of my current account
+U> I want the details of my savings account
 S> Your details are as follows .
