@@ -21,7 +21,7 @@
      </one-of>
    </action>
 
-  <question speaker="user" predicate="select_account" type="wh_question">
+  <question speaker="user" predicate="account_details" type="wh_question">
     <one-of>
       <item>I want to check my account details</item>
       <item>What are my account details</item>
