@@ -11,10 +11,5 @@
   <question speaker="system" predicate="account_details" type="wh_question">
     Your account details are as following <sort predicate="account_details"/>
   </question>
-
-  <individual name="current">
-    <item>current</item>
-  </individual>
-
-
+  
 </grammar>
