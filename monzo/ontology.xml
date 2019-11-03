@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ontology name="MonzoOntology">
 
- <sort name="account_name"/>
- 
+  <sort name="account_name"/>
+
   <predicate name="account_details" sort="string"/>
   <predicate name="select_account" sort="account_name"/>
 
   <individual name="current" sort="account_name"/>
-  <individual name="savings" sort="acccount_name"/>
+  <individual name="savings" sort="account_name"/>
 
 </ontology>
